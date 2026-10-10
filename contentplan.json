@@ -23,7 +23,14 @@
   "vaste_hashtags": [
    "#zzp",
    "#zzptips"
-  ]
+  ],
+  "formaten": {
+   "video": "make_video.py, 9:16 video met kassabon",
+   "carrousel": "make_carousel.py, fotocarrousel met genummerde stappenkaarten (4-6 kaarten, titel max 6 woorden, tekst max 12 woorden)"
+  },
+  "mix": "Ongeveer 1 op de 3 posts is een carrousel (stappenplan/checklist, gemaakt om te bewaren).",
+  "caption_regels": "Begin met het zoekwoord waar ondernemers op zoeken (bijv. 'Btw-aangifte als zzp'er'). Eindig met een vraag die uitnodigt tot reageren + 👇, of met 'Bewaar dit'.",
+  "serie": "Video's krijgen boven de haak een serielabel: 'ZZP-WEETJE #<nummer>' (nummer = aantal eerdere video's in gepost.json + 1)."
  },
  "items": [
   {
@@ -64,6 +71,41 @@
    ]
   },
   {
+   "id": "car-btw-5-stappen",
+   "formaat": "carrousel",
+   "rubriek": "Stappenplan",
+   "haak": "Btw-aangifte in 5 stappen",
+   "kaarten": [
+    {
+     "titel": "Pak je verkoopfacturen",
+     "tekst": "Alle facturen die je dit kwartaal hebt verstuurd."
+    },
+    {
+     "titel": "Pak je inkoopbonnen",
+     "tekst": "Materiaal, gereedschap, brandstof: alles met btw erop."
+    },
+    {
+     "titel": "Tel de btw op je verkopen op",
+     "tekst": "Dit is de btw die je aan je klanten hebt gerekend."
+    },
+    {
+     "titel": "Trek de btw op je inkopen eraf",
+     "tekst": "Dit heet voorbelasting. Die krijg je terug."
+    },
+    {
+     "titel": "Aangifte doen én betalen",
+     "tekst": "Uiterlijk de laatste dag van de maand na het kwartaal."
+    }
+   ],
+   "cta": "Liever uitbesteden? Wij doen het voor je",
+   "caption": "Btw-aangifte als zzp'er: zo doe je het in 5 stappen. Welke stap vind jij het lastigst? 👇",
+   "hashtags": [
+    "#btwaangifte",
+    "#zzptips",
+    "#ondernemen"
+   ]
+  },
+  {
    "id": "bonnetje-7-jaar",
    "rubriek": "Deze fout kost je geld",
    "haak": "Gooi dit bonnetje niet weg",
@@ -100,6 +142,46 @@
    ]
   },
   {
+   "id": "car-factuur-eisen",
+   "formaat": "carrousel",
+   "rubriek": "Checklist",
+   "haak": "Dit moet op elke factuur staan",
+   "kaarten": [
+    {
+     "titel": "Een uniek factuurnummer",
+     "tekst": "Doorlopend, zonder gaten in de nummering."
+    },
+    {
+     "titel": "De factuurdatum",
+     "tekst": "En de datum waarop je het werk deed."
+    },
+    {
+     "titel": "Jouw gegevens",
+     "tekst": "Naam, adres, KvK-nummer en btw-id."
+    },
+    {
+     "titel": "Gegevens van je klant",
+     "tekst": "Naam en adres van de klant."
+    },
+    {
+     "titel": "Wat je deed",
+     "tekst": "Een duidelijke omschrijving van het werk of de levering."
+    },
+    {
+     "titel": "De bedragen",
+     "tekst": "Bedrag zonder btw, het btw-tarief en het btw-bedrag."
+    }
+   ],
+   "cta": "Vragen over je facturen? Stuur ons een bericht",
+   "caption": "Checklist: dit moet op elke factuur als zzp'er. Mis jij er een? 👇",
+   "hashtags": [
+    "#factuur",
+    "#zzptips",
+    "#administratie"
+   ],
+   "eenheid": "punten"
+  },
+  {
    "id": "urencriterium",
    "rubriek": "Zzp-vraag",
    "haak": "1.225 uur. Haal jij dat?",
@@ -133,6 +215,41 @@
     "#btwverlegd",
     "#zzpbouw",
     "#onderaannemer"
+   ]
+  },
+  {
+   "id": "car-eerste-werknemer",
+   "formaat": "carrousel",
+   "rubriek": "Werkgever",
+   "haak": "Je eerste werknemer? Regel dit eerst",
+   "kaarten": [
+    {
+     "titel": "Meld je aan als werkgever",
+     "tekst": "Bij de Belastingdienst, voor een loonheffingennummer."
+    },
+    {
+     "titel": "Leg afspraken vast",
+     "tekst": "Een arbeidscontract met loon, uren en duur."
+    },
+    {
+     "titel": "Controleer de identiteit",
+     "tekst": "Bewaar een kopie van het ID in je administratie."
+    },
+    {
+     "titel": "Regel arbozorg",
+     "tekst": "Een arbodienst of bedrijfsarts voor verzuim."
+    },
+    {
+     "titel": "Zet je loonadministratie op",
+     "tekst": "Loonstroken en elke maand loonaangifte."
+    }
+   ],
+   "cta": "Loon en HR uitbesteden? Link in bio",
+   "caption": "Eerste personeel aannemen? Deze 5 dingen regel je eerst. Bewaar dit! 👇",
+   "hashtags": [
+    "#werkgever",
+    "#personeel",
+    "#ondernemen"
    ]
   },
   {
@@ -172,6 +289,42 @@
    ]
   },
   {
+   "id": "car-bonnetjes-systeem",
+   "formaat": "carrousel",
+   "rubriek": "Bonnetjes",
+   "haak": "Nooit meer een bonnetje kwijt",
+   "kaarten": [
+    {
+     "titel": "Direct een foto",
+     "tekst": "Meteen na het betalen, nog bij de kassa."
+    },
+    {
+     "titel": "Eén vaste plek",
+     "tekst": "Eén map per kwartaal, digitaal of in een doos."
+    },
+    {
+     "titel": "Een zakelijke rekening",
+     "tekst": "Zakelijk en privé gescheiden is overzicht."
+    },
+    {
+     "titel": "Elke week 15 minuten",
+     "tekst": "Vaste tijd, bijvoorbeeld vrijdagmiddag."
+    },
+    {
+     "titel": "Bewaar 7 jaar",
+     "tekst": "Dat is de wettelijke bewaarplicht."
+    }
+   ],
+   "cta": "Foto maken, wij doen de rest. Link in bio",
+   "caption": "Zo raak je nooit meer een bonnetje kwijt. Wat is jouw systeem? 👇",
+   "hashtags": [
+    "#bonnetjes",
+    "#administratie",
+    "#zzpbouw"
+   ],
+   "eenheid": "tips"
+  },
+  {
    "id": "zakelijke-rekening",
    "rubriek": "Deze fout kost je geld",
    "haak": "Alles op één bankrekening?",
@@ -205,6 +358,41 @@
     "#administratie",
     "#gratischeck",
     "#zzpbouw"
+   ]
+  },
+  {
+   "id": "car-achterstand",
+   "formaat": "carrousel",
+   "rubriek": "Achterstand",
+   "haak": "Achter met je administratie? Zo pak je het aan",
+   "kaarten": [
+    {
+     "titel": "Niet wegkijken",
+     "tekst": "Hoe langer je wacht, hoe groter de stapel."
+    },
+    {
+     "titel": "Begin bij je bank",
+     "tekst": "Je bankafschriften laten alles zien wat er gebeurde."
+    },
+    {
+     "titel": "Maak een lijstje",
+     "tekst": "Welke aangiftes staan nog open?"
+    },
+    {
+     "titel": "Eerst wat het meest haast heeft",
+     "tekst": "Aangiftes met een deadline gaan voor."
+    },
+    {
+     "titel": "Haal hulp",
+     "tekst": "Wij kijken eerst hoe groot het is, op uurtarief."
+    }
+   ],
+   "cta": "Achterstand? Stuur ons een bericht",
+   "caption": "Achter met je administratie? Zo kom je er weer bovenop. 👇",
+   "hashtags": [
+    "#achterstand",
+    "#administratie",
+    "#zzptips"
    ]
   },
   {
