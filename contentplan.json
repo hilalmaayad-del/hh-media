@@ -1,0 +1,589 @@
+{
+ "versie": "2026-10-09",
+ "regels": {
+  "merk": "HH Services — administratiekantoor met uitleg voor ondernemers: administratie, btw, inkomstenbelasting, loonadministratie, HR & werving, trainingen en projectmanagement. Focus: zzp'ers en kleine bedrijven (vooral bouw), Zuid-Holland, online landelijk. Wissel onderwerpen af zodat de complete dienstverlening zichtbaar is.",
+  "toon": "je-vorm, kort, direct, behulpzaam, geen vaktaal, geen verkooppraat. Zinnen max 9 woorden per schermtekst.",
+  "verboden": [
+   "AI-gedreven",
+   "AI",
+   "namen of gezichten van de eigenaren",
+   "beroep van de eigenaren (bijv. docent)",
+   "e-Boekhouden of andere softwarenamen",
+   "garanties of 'altijd'/'nooit' over fiscale uitkomsten",
+   "verzonnen cijfers, reviews of klantverhalen",
+   "concurrenten noemen"
+  ],
+  "prijs": "alleen 'vanaf €50 per maand excl. btw', nooit andere prijzen",
+  "cta_opties": [
+   "Gratis check: link in bio",
+   "Vragen? Stuur ons een bericht",
+   "Uitbesteden? Link in bio"
+  ],
+  "link_bio": "https://hhservices.nl/tools/administratie-check?utm_source=tiktok",
+  "vaste_hashtags": [
+   "#zzp",
+   "#zzptips"
+  ]
+ },
+ "items": [
+  {
+   "id": "btw-q3-countdown",
+   "rubriek": "Deadline",
+   "geldig_tot": "2026-10-31",
+   "haak": "Btw-aangifte Q3: deadline 31 oktober",
+   "slides": [
+    "Juli t/m september",
+    "Aangifte én betaling binnen op 31 oktober",
+    "Te laat met je aangifte = €82 boete",
+    "Nog niet gedaan? Wij regelen het"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Btw Q3 moet uiterlijk 31 oktober binnen zijn én betaald. Nog niet gedaan? Wij helpen.",
+   "hashtags": [
+    "#btwaangifte",
+    "#ondernemen",
+    "#zzpbouw"
+   ]
+  },
+  {
+   "id": "btw-3-dingen",
+   "rubriek": "Zzp-vraag",
+   "haak": "Btw-aangifte doen? Je hebt 3 dingen nodig",
+   "slides": [
+    "1. Je verkoopfacturen van het kwartaal",
+    "2. Je inkoopbonnen",
+    "3. Je bankafschriften",
+    "Stuur het door, wij doen de rest"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Bewaar deze video. Dit heb je nodig voor je btw-aangifte.",
+   "hashtags": [
+    "#btwaangifte",
+    "#administratie",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "bonnetje-7-jaar",
+   "rubriek": "Deze fout kost je geld",
+   "haak": "Gooi dit bonnetje niet weg",
+   "slides": [
+    "Je administratie bewaar je 7 jaar",
+    "Ook bonnetjes van de bouwmarkt",
+    "Maak er direct een foto van",
+    "Dan raak je niets kwijt"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Bewaarplicht: 7 jaar. Foto maken = klaar.",
+   "hashtags": [
+    "#bonnetjes",
+    "#administratie",
+    "#zzpbouw"
+   ]
+  },
+  {
+   "id": "eerste-werknemer",
+   "rubriek": "Werkgever",
+   "haak": "Je eerste werknemer? Regel dit eerst",
+   "slides": [
+    "Registreer je als werkgever",
+    "Een goed arbeidscontract",
+    "Loonadministratie vanaf maand 1",
+    "Wij regelen het hele traject"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Van zzp'er naar werkgever. Zo begin je goed.",
+   "hashtags": [
+    "#werkgever",
+    "#personeel",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "urencriterium",
+   "rubriek": "Zzp-vraag",
+   "haak": "1.225 uur. Haal jij dat?",
+   "slides": [
+    "Nodig voor de zelfstandigenaftrek",
+    "Offertes en administratie tellen ook mee",
+    "Reistijd voor je werk ook",
+    "Houd het elke week bij"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Het urencriterium: 1.225 uur per jaar. Kun jij het bewijzen?",
+   "hashtags": [
+    "#urencriterium",
+    "#zelfstandigenaftrek",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "btw-verlegd",
+   "rubriek": "Bouw-tip",
+   "haak": "Onderaannemer in de bouw? Let hierop",
+   "slides": [
+    "Werk je voor een aannemer?",
+    "Dan reken je meestal geen btw",
+    "Op je factuur: 'btw verlegd'",
+    "Plus het btw-nummer van de aannemer"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Btw verlegd: de fout die we het vaakst zien bij bouw-zzp'ers.",
+   "hashtags": [
+    "#btwverlegd",
+    "#zzpbouw",
+    "#onderaannemer"
+   ]
+  },
+  {
+   "id": "twee-potjes",
+   "rubriek": "Zzp-vraag",
+   "haak": "Zet dit geld meteen apart",
+   "slides": [
+    "Potje 1: de btw die je ontvangt",
+    "Dat geld is nooit van jou",
+    "Potje 2: inkomstenbelasting",
+    "Zo schrik je nooit meer"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Twee potjes en je schrikt nooit meer van een aanslag.",
+   "hashtags": [
+    "#geldtips",
+    "#belasting",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "loonadministratie-wat",
+   "rubriek": "Werkgever",
+   "haak": "Personeel? Dit komt er elke maand bij",
+   "slides": [
+    "Loonstroken maken",
+    "Loonaangifte bij de Belastingdienst",
+    "Vakantiegeld en jaaropgaven",
+    "Of: wij doen het voor je"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Loonadministratie uitbesteden: wel zo rustig.",
+   "hashtags": [
+    "#loonadministratie",
+    "#werkgever",
+    "#personeel"
+   ]
+  },
+  {
+   "id": "zakelijke-rekening",
+   "rubriek": "Deze fout kost je geld",
+   "haak": "Alles op één bankrekening?",
+   "slides": [
+    "Zakelijk en privé door elkaar",
+    "Dan zoek je je suf bij de aangifte",
+    "Open een aparte zakelijke rekening",
+    "Scheelt je uren per kwartaal"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Eén simpele stap die je administratie twee keer zo makkelijk maakt.",
+   "hashtags": [
+    "#administratie",
+    "#starter",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "check-reken-mee",
+   "rubriek": "Reken mee",
+   "haak": "Is jouw administratie op orde? Check het in 2 minuten",
+   "slides": [
+    "Een paar simpele vragen",
+    "Je ziet direct waar je staat",
+    "Gratis, geen account nodig",
+    "Doe hem nu"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Gratis administratie-check in 2 minuten. Link in bio.",
+   "hashtags": [
+    "#administratie",
+    "#gratischeck",
+    "#zzpbouw"
+   ]
+  },
+  {
+   "id": "starter-checklist",
+   "rubriek": "Zzp-vraag",
+   "haak": "Net gestart als zzp'er? Doe dit eerst",
+   "slides": [
+    "Aparte zakelijke rekening",
+    "Uren bijhouden vanaf dag 1",
+    "Alle bonnen bewaren",
+    "Btw-nummers goed bewaren"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Starterschecklist. Sla op voor later.",
+   "hashtags": [
+    "#starter",
+    "#eigenbedrijf",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "vacature-tips",
+   "rubriek": "HR & werving",
+   "haak": "Niemand reageert op je vacature?",
+   "slides": [
+    "Beschrijf het werk concreet",
+    "Noem het salaris",
+    "Reageer binnen 24 uur",
+    "Wij helpen je met werving"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Drie tips voor een vacature die wél reacties krijgt.",
+   "hashtags": [
+    "#vacature",
+    "#werving",
+    "#personeel"
+   ]
+  },
+  {
+   "id": "schoenendoos",
+   "rubriek": "Herkenning",
+   "haak": "Jij, 3 dagen voor de btw-deadline",
+   "slides": [
+    "Bonnen in je bus",
+    "Facturen ergens in je mail",
+    "Geen idee wat je moet betalen",
+    "Of: wij doen het voor je"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Herkenbaar? Je bent niet de enige.",
+   "hashtags": [
+    "#zzplife",
+    "#administratie",
+    "#zzpbouw"
+   ]
+  },
+  {
+   "id": "voorlopige-aanslag",
+   "rubriek": "Zzp-vraag",
+   "haak": "Grote klap van de Belastingdienst? Voorkom het zo",
+   "slides": [
+    "Vraag een voorlopige aanslag aan",
+    "Dan betaal je per maand",
+    "Geen grote rekening achteraf",
+    "Wij kunnen je hierbij helpen"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Spreid je belasting in plaats van één grote klap.",
+   "hashtags": [
+    "#belasting",
+    "#inkomstenbelasting",
+    "#ondernemen"
+   ]
+  },
+  {
+   "id": "achterstand",
+   "rubriek": "Herkenning",
+   "haak": "Maanden achter met je administratie?",
+   "slides": [
+    "Je bent echt niet de enige",
+    "Begin bij je bankafschriften",
+    "Pak eerst de open btw-aangiftes",
+    "Of laat het ons wegwerken"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Achterstand? Zo begin je. Of je geeft het uit handen.",
+   "hashtags": [
+    "#achterstand",
+    "#administratie",
+    "#zzp"
+   ]
+  },
+  {
+   "id": "ziek-doorbetalen",
+   "rubriek": "HR & werving",
+   "haak": "Werknemer ziek? Dit moet je weten",
+   "slides": [
+    "Je betaalt het loon door",
+    "Dat kan tot 2 jaar duren",
+    "Goede afspraken voorkomen gedoe",
+    "Wij denken met je mee"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Ziekte van personeel: wees voorbereid.",
+   "hashtags": [
+    "#verzuim",
+    "#werkgever",
+    "#hr"
+   ]
+  },
+  {
+   "id": "negen-procent",
+   "rubriek": "Bouw-tip",
+   "haak": "Schilder of stukadoor? Misschien 9% btw",
+   "slides": [
+    "Werk aan woningen ouder dan 2 jaar",
+    "Dan geldt vaak 9% op het arbeidsdeel",
+    "Materiaal blijft meestal 21%",
+    "Twijfel? Vraag het ons"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Het lage btw-tarief bij schilder- en stucwerk aan oudere woningen.",
+   "hashtags": [
+    "#schilder",
+    "#stukadoor",
+    "#btw"
+   ]
+  },
+  {
+   "id": "uren-vrijdag",
+   "rubriek": "Tip",
+   "haak": "5 minuten per week die je geld opleveren",
+   "slides": [
+    "Elke vrijdag: noteer je uren",
+    "Klussen, offertes, administratie",
+    "Gewoon in je agenda",
+    "Zo bewijs je het urencriterium"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Maak er een vaste vrijdaggewoonte van.",
+   "hashtags": [
+    "#urencriterium",
+    "#zzptips",
+    "#planning"
+   ]
+  },
+  {
+   "id": "factuur-eisen",
+   "rubriek": "Deze fout kost je geld",
+   "haak": "Mist dit op jouw factuur?",
+   "slides": [
+    "Factuurnummer en datum",
+    "Jouw KvK- en btw-nummer",
+    "Wat je deed en wanneer",
+    "Bedrag, btw-tarief en btw-bedrag"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Een factuur zonder deze gegevens kan je problemen geven.",
+   "hashtags": [
+    "#factuur",
+    "#administratie",
+    "#zzpbouw"
+   ]
+  },
+  {
+   "id": "personeelsdossier",
+   "rubriek": "HR & werving",
+   "haak": "Is jouw personeelsdossier op orde?",
+   "slides": [
+    "Kopie identiteitsbewijs",
+    "Getekend arbeidscontract",
+    "Gegevens voor de loonheffing",
+    "Wij zetten het voor je op orde"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Een compleet personeelsdossier scheelt je later veel gedoe.",
+   "hashtags": [
+    "#hr",
+    "#personeel",
+    "#werkgever"
+   ]
+  },
+  {
+   "id": "kor",
+   "rubriek": "Zzp-vraag",
+   "haak": "Minder dan €20.000 omzet per jaar?",
+   "slides": [
+    "Kijk dan naar de KOR",
+    "Kleineondernemersregeling",
+    "Dan reken je geen btw",
+    "Maar kan je ook geen btw terugvragen"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "De KOR: handig of niet? Het hangt af van je situatie.",
+   "hashtags": [
+    "#kor",
+    "#btw",
+    "#starter"
+   ]
+  },
+  {
+   "id": "reken-opzij",
+   "rubriek": "Reken mee",
+   "haak": "Hoeveel moet jij opzij zetten?",
+   "slides": [
+    "Het hangt af van je winst",
+    "Niet van je omzet",
+    "Reken het zelf uit",
+    "Met onze gratis tools"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Winst ≠ omzet. Reken het uit.",
+   "hashtags": [
+    "#belasting",
+    "#geldtips",
+    "#zzp"
+   ]
+  },
+  {
+   "id": "jij-bouwt",
+   "rubriek": "Merk",
+   "haak": "Jij bouwt. Wij doen je administratie.",
+   "slides": [
+    "Btw-aangifte geregeld",
+    "Uren en aftrekposten op orde",
+    "Uitleg in gewone taal",
+    "Vanaf €50 per maand excl. btw"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Administratie voor zzp'ers in de bouw. Met uitleg.",
+   "hashtags": [
+    "#zzpbouw",
+    "#administratie",
+    "#vakman"
+   ]
+  },
+  {
+   "id": "een-team",
+   "rubriek": "Merk",
+   "haak": "Administratie, belasting, loon en HR",
+   "slides": [
+    "Alles bij één team",
+    "Niets valt tussen wal en schip",
+    "Met uitleg in gewone taal",
+    "Groeit mee met je bedrijf"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Van zzp'er tot werkgever: één team voor alles.",
+   "hashtags": [
+    "#ondernemen",
+    "#administratie",
+    "#hr"
+   ]
+  },
+  {
+   "id": "omzet-winst",
+   "rubriek": "Deze fout kost je geld",
+   "haak": "€6.000 omzet ≠ €6.000 in je zak",
+   "slides": [
+    "Eerst je kosten eraf",
+    "Dan de btw die je moet afdragen",
+    "Daarna nog inkomstenbelasting",
+    "Weet wat je echt verdient"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Omzet is niet wat je verdient.",
+   "hashtags": [
+    "#geldtips",
+    "#ondernemen",
+    "#zzpbouw"
+   ]
+  },
+  {
+   "id": "bus-zaak",
+   "rubriek": "Bouw-tip",
+   "haak": "Bus op de zaak? Let hierop",
+   "slides": [
+    "Rijd je er ook privé mee?",
+    "Dat heeft gevolgen voor de btw",
+    "Een rittenregistratie helpt",
+    "Twijfel? Vraag het ons"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Bus van de zaak en privégebruik: houd het bij.",
+   "hashtags": [
+    "#bedrijfsbus",
+    "#zzpbouw",
+    "#btw"
+   ]
+  },
+  {
+   "id": "ib-vroeg",
+   "rubriek": "Tip",
+   "haak": "Aangifte inkomstenbelasting: begin nu al",
+   "slides": [
+    "Verzamel je jaaroverzichten",
+    "Bewaar je urenregistratie",
+    "Zet je bonnen per maand op orde",
+    "Dan is maart een eitje"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Wie in het najaar opruimt, heeft in het voorjaar rust.",
+   "hashtags": [
+    "#inkomstenbelasting",
+    "#zzptips",
+    "#planning"
+   ]
+  },
+  {
+   "id": "training",
+   "rubriek": "Merk",
+   "haak": "Zelf je cijfers leren lezen?",
+   "slides": [
+    "Wij geven trainingen",
+    "Praktisch en zonder vaktaal",
+    "Voor ondernemers en teams",
+    "Direct toepasbaar"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Grip op je eigen cijfers. Wij leren het je.",
+   "hashtags": [
+    "#training",
+    "#ondernemen",
+    "#financien"
+   ]
+  },
+  {
+   "id": "gereedschap",
+   "rubriek": "Zzp-vraag",
+   "haak": "Is je gereedschap aftrekbaar?",
+   "slides": [
+    "Zakelijke kosten verlagen je winst",
+    "Denk aan gereedschap en werkkleding",
+    "Bewaar altijd de bon",
+    "Twijfel? Vraag het ons"
+   ],
+   "cta": "Vragen? Stuur ons een bericht",
+   "caption": "Zakelijke kosten: bewaar je bonnen.",
+   "hashtags": [
+    "#gereedschap",
+    "#zzpbouw",
+    "#aftrekpost"
+   ]
+  },
+  {
+   "id": "uitleg",
+   "rubriek": "Merk",
+   "haak": "Een boekhouder die je cijfers uitlegt",
+   "slides": [
+    "Geen vaktaal",
+    "Je weet altijd waar je staat",
+    "En wat je moet betalen",
+    "Mensenwerk, slim geautomatiseerd"
+   ],
+   "cta": "Uitbesteden? Link in bio",
+   "caption": "Je krijgt nooit cijfers zonder uitleg.",
+   "hashtags": [
+    "#administratie",
+    "#boekhouder",
+    "#zzp"
+   ]
+  },
+  {
+   "id": "foto-bon",
+   "rubriek": "Tip",
+   "haak": "De snelste manier om je bonnen te bewaren",
+   "slides": [
+    "Bon gekregen?",
+    "Direct een foto",
+    "In één vaste map",
+    "Klaar. Geen schoenendoos meer"
+   ],
+   "cta": "Gratis check: link in bio",
+   "caption": "Tien seconden per bon. Scheelt uren later.",
+   "hashtags": [
+    "#bonnetjes",
+    "#zzptips",
+    "#administratie"
+   ]
+  }
+ ]
+}
