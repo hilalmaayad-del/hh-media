@@ -1,0 +1,219 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Archivo;font-weight:900;src:url(../fonts/archivo-900.ttf)}
+@font-face{font-family:Archivo;font-weight:800;src:url(../fonts/archivo-800.ttf)}
+@font-face{font-family:Mono;font-weight:700;src:url(../fonts/jbmono-700.ttf)}
+html,body{margin:0;padding:0;width:1080px;height:1920px;overflow:hidden;background:#F7F0E2}
+svg{display:block}
+text{font-family:Archivo;font-weight:900}
+.mono{font-family:Mono;font-weight:700}
+</style></head>
+<body>
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="0.75" cy="0.25" r="0.8"><stop offset="0" stop-color="#FFF6DF"/><stop offset="1" stop-color="#F2E8D4"/></radialGradient>
+    <linearGradient id="okerbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EBAE3F"/><stop offset="1" stop-color="#D9921E"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity=".18"/></filter>
+    <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity=".25"/></filter>
+    <g id="receipt">
+      <path d="M-120,-170 H120 V150 l-12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 Z" fill="#fff"/>
+      <text x="-90" y="-118" class="mono" font-size="26" fill="#777">BOUWMARKT</text>
+      <rect x="-90" y="-90" width="150" height="10" rx="5" fill="#bbb"/><rect x="-90" y="-60" width="110" height="10" rx="5" fill="#bbb"/>
+      <rect x="-90" y="-30" width="170" height="10" rx="5" fill="#bbb"/><rect x="-90" y="0" width="90" height="10" rx="5" fill="#bbb"/>
+      <text x="-90" y="80" font-size="40" fill="#121212">€ 84,95</text>
+    </g>
+  </defs>
+
+  <!-- SCENE A: fout -->
+  <g id="sceneA">
+    <rect width="1080" height="1920" fill="url(#glow)"/>
+    <rect y="1640" width="1080" height="280" fill="#E8DCC4"/>
+    <g id="camA">
+      <!-- prullenbak -->
+      <g id="bin" transform="translate(290,1690)">
+        <ellipse cx="0" cy="8" rx="150" ry="22" fill="#000" opacity=".12"/>
+        <path d="M-118,-250 H118 L96,0 H-96 Z" fill="#8A939B"/>
+        <path d="M-60,-220 L-50,-30 M0,-220 V-30 M60,-220 L50,-30" stroke="#78818A" stroke-width="12" stroke-linecap="round"/>
+        <rect id="lid" x="-140" y="-282" width="280" height="38" rx="14" fill="#6E777F"/>
+      </g>
+      <use id="rcA" href="#receipt" filter="url(#sh)"/>
+      <g id="stamp" opacity="0">
+        <rect x="-250" y="-110" width="500" height="220" rx="26" fill="none" stroke="#D64034" stroke-width="18"/>
+        <text x="0" y="62" font-size="170" text-anchor="middle" fill="#D64034">FOUT</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- SCENE B: zo doe je het wel -->
+  <g id="sceneB" opacity="0">
+    <rect width="1080" height="1920" fill="url(#glow)"/>
+    <rect y="1640" width="1080" height="280" fill="#E8DCC4"/>
+    <g id="checks"></g>
+  </g>
+
+  <!-- SCENE C: cta -->
+  <g id="sceneC" opacity="0">
+    <rect width="1080" height="1920" fill="url(#okerbg)"/>
+    <g id="ctaText"></g>
+    <g id="ctaBtn" filter="url(#sh2)">
+      <rect x="72" y="760" width="660" height="124" rx="62" fill="#121212"/>
+      <text x="124" y="844" font-size="64" fill="#E3A02A">hhservices.nl</text>
+    </g>
+    <text id="ctaTel" x="72" y="960" class="mono" font-size="50" fill="#121212">085 109 1274</text>
+    <text id="ctaSerie" x="72" y="1030" class="mono" font-size="34" fill="#5a3d08">De fout van de week · elke maandag</text>
+  </g>
+
+  <!-- mister rekenmachine (gedeeld) -->
+  <g id="mister" filter="url(#sh)">
+    <g id="legL"><line x1="0" y1="0" x2="0" y2="100" stroke="#222" stroke-width="22" stroke-linecap="round"/><rect x="-36" y="88" width="78" height="34" rx="16" fill="#E3A02A"/></g>
+    <g id="legR"><line x1="0" y1="0" x2="0" y2="100" stroke="#222" stroke-width="22" stroke-linecap="round"/><rect x="-36" y="88" width="78" height="34" rx="16" fill="#E3A02A"/></g>
+    <g id="body">
+      <g id="armL"><line x1="0" y1="0" x2="-70" y2="80" stroke="#222" stroke-width="20" stroke-linecap="round"/><circle cx="-70" cy="80" r="24" fill="#fafafa"/></g>
+      <g id="armR"><line x1="0" y1="0" x2="70" y2="80" stroke="#222" stroke-width="20" stroke-linecap="round"/><circle cx="70" cy="80" r="24" fill="#fafafa"/></g>
+      <rect x="-135" y="-360" width="270" height="360" rx="52" fill="#232220"/>
+      <rect x="-122" y="-350" width="244" height="40" rx="26" fill="#3a3835"/>
+      <rect x="-108" y="-318" width="216" height="130" rx="22" fill="#1A1206"/>
+      <g id="face">
+        <ellipse id="eyeL" cx="-52" cy="-268" rx="17" ry="21" fill="#E3A02A"/>
+        <ellipse id="eyeR" cx="52" cy="-268" rx="17" ry="21" fill="#E3A02A"/>
+        <path id="mouth" d="M-30,-228 Q0,-205 30,-228" stroke="#E3A02A" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <ellipse id="cheekL" cx="-80" cy="-226" rx="12" ry="7" fill="#E3A02A" opacity=".35"/>
+        <ellipse id="cheekR" cx="80" cy="-226" rx="12" ry="7" fill="#E3A02A" opacity=".35"/>
+      </g>
+      <g id="keys"></g>
+    </g>
+  </g>
+
+  <!-- tekstballon -->
+  <g id="bubble" opacity="0" filter="url(#sh2)">
+    <path id="bubTail" d="" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+    <rect id="bubBox" x="0" y="0" width="600" height="200" rx="40" fill="#fff" stroke="#121212" stroke-width="6"/>
+    <rect id="bubFix" x="0" y="0" width="0" height="0" fill="#fff"/>
+    <g id="bubText"></g>
+  </g>
+
+  <!-- vaste kop -->
+  <g id="top">
+    <text x="72" y="148" font-size="58" fill="#121212">HH</text>
+    <rect x="172" y="96" width="304" height="68" rx="10" fill="#121212"/>
+    <text x="188" y="148" font-size="58" fill="#E3A02A">Services</text>
+    <g id="pill"><rect id="pillBg" x="72" y="214" width="560" height="78" rx="39" fill="#D64034"/><text id="pillTx" x="102" y="266" class="mono" font-size="38" fill="#fff">DE FOUT VAN DE WEEK #1</text></g>
+    <g id="hook"></g>
+  </g>
+  <rect id="flash" width="1080" height="1920" fill="#fff" opacity="0"/>
+</svg>
+
+<script>
+const NS="http://www.w3.org/2000/svg";
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const spring=x=>{x=clamp(x);return 1-Math.cos(x*Math.PI*2.5)*Math.exp(-x*5.5)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+function el(tag,attrs,parent,txt){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(txt!==undefined)e.textContent=txt;parent.appendChild(e);return e}
+
+// toetsen
+(function(){const g=$("keys");const lab=["7","8","9","÷","4","5","6","×","1","2","3","−"];for(let r=0;r<3;r++)for(let c=0;c<4;c++){const x=-104+c*54,y=-166+r*50;const op=c===3;const hot=(r===2&&c===3);el("rect",{x,y,width:46,height:40,rx:9,fill:hot?"#E3A02A":op?"#4a4641":"#ECE8DE"},g);el("text",{x:x+23,y:y+30,"font-size":24,"text-anchor":"middle",fill:op&&!hot?"#eee":"#121212"},g,lab[r*4+c])}})();
+
+const D=window.DATA;
+// layout tekst
+function wrapLines(text,size,maxw){const c=document.createElement("canvas").getContext("2d");c.font=`900 ${size}px Archivo`;const out=[];let cur="";for(const w of text.split(" ")){const t=(cur+" "+w).trim();if(c.measureText(t).width<=maxw)cur=t;else{out.push(cur);cur=w}}if(cur)out.push(cur);return out}
+
+function mister(x,y,s,o){ // o: walk, talk, mood, wave, blink, look, rot
+  const m=$("mister");const bob=o.walk?Math.abs(Math.sin(o.walk))*12:0;
+  m.setAttribute("transform",`translate(${x},${y-bob*s}) scale(${s}) rotate(${o.rot||0})`);
+  const sw=o.walk?Math.sin(o.walk)*24:0;
+  $("legL").setAttribute("transform",`translate(-55,-112) rotate(${sw})`);
+  $("legR").setAttribute("transform",`translate(55,-112) rotate(${-sw})`);
+  $("body").setAttribute("transform",`translate(0,-110) rotate(${o.walk?Math.sin(o.walk*2)*1.5:0})`);
+  $("armL").setAttribute("transform",`translate(-132,-190) rotate(${o.walk?-sw:(o.armL||0)})`);
+  const wave=o.wave?(-120+Math.sin(o.wave*14)*25):(o.walk?sw:(o.armR||0));
+  $("armR").setAttribute("transform",`translate(132,-190) rotate(${wave})`);
+  const lk=(o.look||0)*10;
+  const scared=o.mood==="schrik";
+  for(const [id,cx] of [["eyeL",-52],["eyeR",52]]){const e=$(id);e.setAttribute("cx",cx+lk);e.setAttribute("ry",o.blink?2:(scared?27:21));e.setAttribute("rx",scared?21:17)}
+  const t=o.talk||0;
+  if(scared) $("mouth").setAttribute("d",`M${-14+lk},-222 a14,${14+t*6} 0 1,0 28,0 a14,${14+t*6} 0 1,0 -28,0`);
+  else if(t>0.12) $("mouth").setAttribute("d",`M${-28+lk},-232 Q${lk},${-232+34*t} ${28+lk},-232 Z`);
+  else $("mouth").setAttribute("d",`M${-30+lk},-228 Q${lk},-205 ${30+lk},-228`);
+  $("mouth").setAttribute("fill",(scared||t>0.12)?"#E3A02A":"none");
+}
+
+function bubble(show,x,y,w,text,tipx,tipy,size,typed){
+  const b=$("bubble");if(show<=0){b.setAttribute("opacity",0);return}
+  const lines=wrapLines(text,size,w-80);const h=lines.length*size*1.18+70;
+  const sc=spring(show);b.setAttribute("opacity",clamp(show*4));
+  b.setAttribute("transform",`translate(${tipx},${tipy}) scale(${sc}) translate(${-tipx},${-tipy})`);
+  $("bubBox").setAttribute("x",x);$("bubBox").setAttribute("y",y);$("bubBox").setAttribute("width",w);$("bubBox").setAttribute("height",h);
+  const bx=clamp(tipx,x+70,x+w-70);
+  $("bubTail").setAttribute("d",`M${bx-34},${y+h-6} L${tipx},${tipy} L${bx+34},${y+h-6} Z`);
+  $("bubFix").setAttribute("x",bx-30);$("bubFix").setAttribute("y",y+h-12);$("bubFix").setAttribute("width",60);$("bubFix").setAttribute("height",10);
+  const g=$("bubText");g.innerHTML="";const words=text.split(" ");let n=Math.max(1,Math.round(words.length*typed));let cnt=0;
+  lines.forEach((ln,i)=>{const ws=ln.split(" ");const part=[];for(const w2 of ws){cnt++;if(cnt<=n)part.push(w2)}if(part.length)el("text",{x:x+40,y:y+34+size+i*size*1.18,"font-size":size,fill:"#121212"},g,part.join(" "))});
+}
+
+function hook(t){const g=$("hook");g.innerHTML="";const words=D.haak.split(" ");const lines=wrapLines(D.haak,112,920);let k=0;
+  lines.forEach((ln,i)=>{let x=72;const c=document.createElement("canvas").getContext("2d");c.font="900 112px Archivo";
+    for(const w of ln.split(" ")){const st=0.15+k*0.2;const p=clamp((t-st)/0.35);if(p>0){const sc=spring(p);const red=D.rood.includes(w.toLowerCase().replace(/[.,!?]/g,""));
+        const tx=el("text",{x:0,y:0,"font-size":112,fill:red?"#D64034":"#121212",transform:`translate(${x},${380+i*126}) scale(${0.6+0.4*sc})`,opacity:clamp(p*3)},g,w)}
+      x+=c.measureText(w+" ").width;k++}})}
+
+function render(t){
+  const T=D.T;
+  const A=t<T.b, B=t>=T.b&&t<T.c, C=t>=T.c;
+  $("sceneA").setAttribute("opacity",A?1:0);$("sceneB").setAttribute("opacity",B?1:0);$("sceneC").setAttribute("opacity",C?1:0);
+  $("top").setAttribute("opacity",C?0:1);
+  const blink=(Math.floor(t*30)%95)<3;
+  if(A){
+    $("pillBg").setAttribute("fill","#D64034");$("pillTx").textContent=D.label;$("pillBg").setAttribute("width",60+D.label.length*23);
+    hook(t);
+    // bonnetje
+    const r=$("rcA");
+    if(t<T.stop){const p=eio(clamp((t-0.7)/1.5));const x=lerp(820,290,p),y=lerp(1050,1420,p)-Math.sin(p*Math.PI)*300;const rot=lerp(8,-200,p);
+      r.setAttribute("transform",`translate(${x},${y}) rotate(${rot}) scale(${lerp(1,0.55,p)})`);r.setAttribute("opacity",p>0.97?0:1)}
+    else{const p=spring(clamp((t-T.stop-0.25)/0.7));const x=lerp(290,430,p),y=lerp(1420,1180,p);r.setAttribute("opacity",1);
+      r.setAttribute("transform",`translate(${x},${y}) rotate(${lerp(-200,-8,eo((t-T.stop-0.25)/0.5))}) scale(${lerp(0.55,1,p)})`)}
+    // deksel wiebelt bij inslag
+    const hit=t-2.2;$("lid").setAttribute("transform",hit>0&&hit<0.6?`rotate(${Math.sin(hit*30)*6*(1-hit/0.6)},0,-263)`:"");
+    // mister loopt binnen
+    const mt=clamp((t-1.2)/1.6);const mx=lerp(1300,800,eo(mt));
+    const scared=t>T.stop-0.2&&t<T.stop+1.0;
+    mister(mx,1830,1.0,{walk:mt<1?t*9:0,blink,mood:scared?"schrik":"blij",look:-1,talk:t>T.stop?Math.abs(Math.sin((t-T.stop)*18))*(t<T.stop+0.9?1:0):0,armR:t>T.stop?-150:0});
+    if(t>=T.stop){bubble(clamp((t-T.stop)/0.45),420,700,600,D.stop,760,1450,62,clamp((t-T.stop)/0.5))}else bubble(0);
+    // stempel + camera shake
+    const st=t-(T.stop+0.9);const s=$("stamp");
+    if(st>0){const p=clamp(st/0.16);s.setAttribute("opacity",clamp(st/0.08));s.setAttribute("transform",`translate(330,1460) rotate(-12) scale(${lerp(2.6,1,eo(p))})`)}else s.setAttribute("opacity",0);
+    const sh=st>0&&st<0.35?(1-st/0.35)*14:0;$("camA").setAttribute("transform",`translate(${Math.sin(t*90)*sh},${Math.cos(t*77)*sh})`);
+  }
+  if(B){
+    $("pillBg").setAttribute("fill","#2E8C5A");$("pillTx").textContent="ZO DOE JE HET WEL";$("pillBg").setAttribute("width",60+17*23);
+    $("hook").innerHTML="";
+    const lt=t-T.b;const k=Math.min(D.tips.length-1,Math.floor(lt/T.tip));const kt=lt-k*T.tip;
+    // checklist
+    const g=$("checks");g.innerHTML="";
+    for(let j=0;j<=k;j++){const done=j<k||kt>T.tip-0.55;if(!done)continue;const p=j<k?1:eo((kt-(T.tip-0.55))/0.4);const y=360+j*96;
+      const cg=el("g",{transform:`translate(${lerp(-200,0,p)},0)`,opacity:p},g);
+      el("circle",{cx:100,cy:y+28,r:30,fill:"#2E8C5A"},cg);
+      el("path",{d:`M84,${y+28} l12,12 l22,-24`,stroke:"#fff","stroke-width":8,fill:"none","stroke-linecap":"round","stroke-linejoin":"round"},cg);
+      el("text",{x:150,y:y+44,"font-size":44,"font-weight":800,fill:"#3d3a35",style:"font-weight:800"},cg,D.tips[j])}
+    const talk=kt<1.3?Math.abs(Math.sin(kt*17)):0;
+    const enter=eo(clamp(lt/0.5));
+    mister(lerp(-200,300,enter),1840,1.22,{talk,blink,look:1,armR:kt<1.2?-40+Math.sin(kt*8)*15:0});
+    bubble(clamp(kt/0.4)*(kt<T.tip-0.6?1:clamp((T.tip-0.25-kt)/0.35)),380,860,640,D.tips[k],520,1300,66,clamp(kt/0.9));
+  }
+  if(C){
+    const ct=t-T.c;bubble(0);
+    const g=$("ctaText");g.innerHTML="";const lines=wrapLines(D.cta,108,930);
+    lines.forEach((ln,i)=>{const p=eo(clamp((ct-0.1-i*0.12)/0.45));el("text",{x:72,y:420+i*120+(1-p)*60,"font-size":108,fill:"#121212",opacity:p},g,ln)});
+    const pb=spring(clamp((ct-0.4)/0.6));$("ctaBtn").setAttribute("transform",`translate(402,822) scale(${pb}) translate(-402,-822)`);
+    $("ctaTel").setAttribute("opacity",clamp((ct-0.7)/0.3));$("ctaSerie").setAttribute("opacity",clamp((ct-0.9)/0.3));
+    const jump=Math.abs(Math.sin(clamp(ct/0.6)*Math.PI))*60;
+    mister(760,1840-jump,1.15,{wave:ct>0.6?ct:0,blink,talk:0});
+  }
+  $("flash").setAttribute("opacity",(Math.abs(t-T.b)<0.12||Math.abs(t-T.c)<0.12)?0.5*(1-Math.min(Math.abs(t-T.b),Math.abs(t-T.c))/0.12):0);
+}
+window.render=render;
+</script>
+</body></html>
