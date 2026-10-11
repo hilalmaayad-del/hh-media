@@ -22,5 +22,61 @@
     "rubriek": "Stappenplan",
     "metricool_id": 393331660,
     "opmerking": "door eigenaar goedgekeurd"
+  },
+  {
+    "datum": "2026-10-12",
+    "id": "bonnetje-7-jaar",
+    "haak": "Gooi dit bonnetje niet weg",
+    "rubriek": "Deze fout kost je geld",
+    "metricool_id": 393491886,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
+  },
+  {
+    "datum": "2026-10-13",
+    "id": "eerste-werknemer",
+    "haak": "Je eerste werknemer? Regel dit eerst",
+    "rubriek": "Werkgever",
+    "metricool_id": 393491909,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
+  },
+  {
+    "datum": "2026-10-14",
+    "id": "car-factuur-eisen",
+    "haak": "Dit moet op elke factuur staan",
+    "rubriek": "Checklist",
+    "metricool_id": 393491939,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
+  },
+  {
+    "datum": "2026-10-15",
+    "id": "urencriterium",
+    "haak": "1.225 uur. Haal jij dat?",
+    "rubriek": "Zzp-vraag",
+    "metricool_id": 393491967,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
+  },
+  {
+    "datum": "2026-10-16",
+    "id": "btw-verlegd",
+    "haak": "Onderaannemer in de bouw? Let hierop",
+    "rubriek": "Bouw-tip",
+    "metricool_id": 393491992,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
+  },
+  {
+    "datum": "2026-10-17",
+    "id": "twee-potjes",
+    "haak": "Zet dit geld meteen apart",
+    "rubriek": "Zzp-vraag",
+    "metricool_id": 393492009,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
+  },
+  {
+    "datum": "2026-10-18",
+    "id": "zakelijke-rekening",
+    "haak": "Alles op één bankrekening?",
+    "rubriek": "Deze fout kost je geld",
+    "metricool_id": 393492029,
+    "status": "privé geplaatst 11-10, eigenaar zet zelf open"
   }
 ]
