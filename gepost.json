@@ -13,5 +13,14 @@
     "rubriek": "Zzp-vraag",
     "metricool_id": 392902061,
     "opmerking": "vervangt 392894776 (getal ontbrak in haak)"
+  },
+  {
+    "datum": "2026-10-11",
+    "id": "car-btw-5-stappen",
+    "formaat": "carrousel",
+    "haak": "Btw-aangifte in 5 stappen",
+    "rubriek": "Stappenplan",
+    "metricool_id": 393331660,
+    "opmerking": "door eigenaar goedgekeurd"
   }
 ]
