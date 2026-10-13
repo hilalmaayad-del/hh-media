@@ -1,0 +1,195 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Archivo;font-weight:900;src:url(../fonts/archivo-900.ttf)}
+@font-face{font-family:Archivo;font-weight:800;src:url(../fonts/archivo-800.ttf)}
+@font-face{font-family:Mono;font-weight:700;src:url(../fonts/jbmono-700.ttf)}
+html,body{margin:0;padding:0;width:1080px;height:1920px;overflow:hidden;background:#F7F0E2}
+svg{display:block}
+text{font-family:Archivo;font-weight:900}
+.mono{font-family:Mono;font-weight:700}
+</style></head>
+<body>
+<svg id="s" width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="0.75" cy="0.25" r="0.8"><stop offset="0" stop-color="#FFF6DF"/><stop offset="1" stop-color="#F2E8D4"/></radialGradient>
+    <linearGradient id="okerbg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EBAE3F"/><stop offset="1" stop-color="#D9921E"/></linearGradient>
+    <filter id="sh" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity=".18"/></filter>
+    <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity=".25"/></filter>
+  </defs>
+  <g id="bg"><rect width="1080" height="1920" fill="url(#glow)"/><rect y="1640" width="1080" height="280" fill="#E8DCC4"/>
+    <g opacity=".07" fill="#121212" font-family="Mono" font-weight="700" font-size="120"><text x="760" y="560">+</text><text x="120" y="1500">×</text><text x="900" y="1200">÷</text><text x="60" y="760">=</text><text x="560" y="1560">%</text></g></g>
+  <g id="cam">
+  <g id="card" opacity="0" filter="url(#sh)">
+    <rect x="72" y="360" width="936" height="660" rx="36" fill="#fff"/>
+    <rect x="72" y="360" width="936" height="92" rx="36" fill="#121212"/><rect x="72" y="420" width="936" height="32" fill="#121212"/>
+    <text id="cardTitle" x="112" y="421" class="mono" font-size="36" fill="#E3A02A"></text>
+    <circle cx="930" cy="406" r="12" fill="#D64034"/><circle cx="890" cy="406" r="12" fill="#E3A02A"/><circle cx="850" cy="406" r="12" fill="#2E8C5A"/>
+    <g id="rows"></g>
+  </g>
+  <g id="res" opacity="0" filter="url(#sh)">
+    <rect id="resBg" x="72" y="0" width="936" height="250" rx="36" fill="#121212"/>
+    <text id="resLab" x="120" y="74" class="mono" font-size="40" fill="#F3D9A4"></text>
+    <text id="resNum" x="960" y="170" font-size="150" text-anchor="end" fill="#E3A02A"></text>
+    <text id="resSub" x="120" y="222" class="mono" font-size="32" fill="#F3D9A4"></text>
+  </g>
+  <text id="disc" x="540" y="0" class="mono" font-size="28" text-anchor="middle" fill="#7a6a50" opacity="0"></text>
+  </g>
+  <g id="sceneC" opacity="0">
+    <rect width="1080" height="1920" fill="url(#okerbg)"/>
+    <g id="ctaText"></g>
+    <g id="ctaBtn" filter="url(#sh2)">
+      <rect x="72" y="760" width="820" height="124" rx="62" fill="#121212"/>
+      <text x="124" y="844" font-size="64" fill="#E3A02A">hhservices.nl/tools</text>
+    </g>
+    <text id="ctaTel" x="72" y="960" class="mono" font-size="44" fill="#121212">Gratis · zonder inloggen</text>
+    <text id="ctaSerie" x="72" y="1030" class="mono" font-size="34" fill="#5a3d08">Reken mee · elke ma, wo en vr</text>
+  </g>
+  <!-- mister rekenmachine (gedeeld) -->
+  <g id="mister" filter="url(#sh)">
+    <g id="legL"><line x1="0" y1="0" x2="0" y2="100" stroke="#222" stroke-width="22" stroke-linecap="round"/><rect x="-36" y="88" width="78" height="34" rx="16" fill="#E3A02A"/></g>
+    <g id="legR"><line x1="0" y1="0" x2="0" y2="100" stroke="#222" stroke-width="22" stroke-linecap="round"/><rect x="-36" y="88" width="78" height="34" rx="16" fill="#E3A02A"/></g>
+    <g id="body">
+      <g id="armL"><line x1="0" y1="0" x2="-70" y2="80" stroke="#222" stroke-width="20" stroke-linecap="round"/><circle cx="-70" cy="80" r="24" fill="#fafafa"/></g>
+      <g id="armR"><line x1="0" y1="0" x2="70" y2="80" stroke="#222" stroke-width="20" stroke-linecap="round"/><circle cx="70" cy="80" r="24" fill="#fafafa"/></g>
+      <rect x="-135" y="-360" width="270" height="360" rx="52" fill="#232220"/>
+      <rect x="-122" y="-350" width="244" height="40" rx="26" fill="#3a3835"/>
+      <rect x="-108" y="-318" width="216" height="130" rx="22" fill="#1A1206"/>
+      <g id="face">
+        <ellipse id="eyeL" cx="-52" cy="-268" rx="17" ry="21" fill="#E3A02A"/>
+        <ellipse id="eyeR" cx="52" cy="-268" rx="17" ry="21" fill="#E3A02A"/>
+        <path id="mouth" d="M-30,-228 Q0,-205 30,-228" stroke="#E3A02A" stroke-width="8" fill="none" stroke-linecap="round"/>
+        <ellipse id="cheekL" cx="-80" cy="-226" rx="12" ry="7" fill="#E3A02A" opacity=".35"/>
+        <ellipse id="cheekR" cx="80" cy="-226" rx="12" ry="7" fill="#E3A02A" opacity=".35"/>
+      </g>
+      <g id="keys"></g>
+    </g>
+  </g>
+
+  <!-- tekstballon -->
+  <g id="bubble" opacity="0" filter="url(#sh2)">
+    <path id="bubTail" d="" fill="#fff" stroke="#121212" stroke-width="6" stroke-linejoin="round"/>
+    <rect id="bubBox" x="0" y="0" width="600" height="200" rx="40" fill="#fff" stroke="#121212" stroke-width="6"/>
+    <rect id="bubFix" x="0" y="0" width="0" height="0" fill="#fff"/>
+    <g id="bubText"></g>
+  </g>
+
+  <g id="top">
+    <text x="72" y="148" font-size="58" fill="#121212">HH</text>
+    <rect x="172" y="96" width="304" height="68" rx="10" fill="#121212"/>
+    <text x="188" y="148" font-size="58" fill="#E3A02A">Services</text>
+    <g id="pill"><rect id="pillBg" x="72" y="214" width="560" height="78" rx="39" fill="#121212"/><text id="pillTx" x="102" y="266" class="mono" font-size="38" fill="#E3A02A"></text></g>
+    <g id="hook"></g>
+  </g>
+  <rect id="flash" width="1080" height="1920" fill="#fff" opacity="0"/>
+</svg>
+<script>
+
+const NS="http://www.w3.org/2000/svg";
+const $=id=>document.getElementById(id);
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=x=>{x=clamp(x);return 1-Math.pow(1-x,3)};
+const eio=x=>{x=clamp(x);return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+const spring=x=>{x=clamp(x);return 1-Math.cos(x*Math.PI*2.5)*Math.exp(-x*5.5)};
+const lerp=(a,b,x)=>a+(b-a)*x;
+function el(tag,attrs,parent,txt){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(txt!==undefined)e.textContent=txt;parent.appendChild(e);return e}
+
+// toetsen
+(function(){const g=$("keys");const lab=["7","8","9","÷","4","5","6","×","1","2","3","−"];for(let r=0;r<3;r++)for(let c=0;c<4;c++){const x=-104+c*54,y=-166+r*50;const op=c===3;const hot=(r===2&&c===3);el("rect",{x,y,width:46,height:40,rx:9,fill:hot?"#E3A02A":op?"#4a4641":"#ECE8DE"},g);el("text",{x:x+23,y:y+30,"font-size":24,"text-anchor":"middle",fill:op&&!hot?"#eee":"#121212"},g,lab[r*4+c])}})();
+
+const D=window.DATA;
+// layout tekst
+function wrapLines(text,size,maxw){const c=document.createElement("canvas").getContext("2d");c.font=`900 ${size}px Archivo`;const out=[];let cur="";for(const w of text.split(" ")){const t=(cur+" "+w).trim();if(c.measureText(t).width<=maxw)cur=t;else{out.push(cur);cur=w}}if(cur)out.push(cur);return out}
+
+function mister(x,y,s,o){ // o: walk, talk, mood, wave, blink, look, rot
+  const m=$("mister");const bob=o.walk?Math.abs(Math.sin(o.walk))*12:0;
+  m.setAttribute("transform",`translate(${x},${y-bob*s}) scale(${s}) rotate(${o.rot||0})`);
+  const sw=o.walk?Math.sin(o.walk)*24:0;
+  $("legL").setAttribute("transform",`translate(-55,-112) rotate(${sw})`);
+  $("legR").setAttribute("transform",`translate(55,-112) rotate(${-sw})`);
+  $("body").setAttribute("transform",`translate(0,-110) rotate(${o.walk?Math.sin(o.walk*2)*1.5:0})`);
+  $("armL").setAttribute("transform",`translate(-132,-190) rotate(${o.walk?-sw:(o.armL||0)})`);
+  const wave=o.wave?(-120+Math.sin(o.wave*14)*25):(o.walk?sw:(o.armR||0));
+  $("armR").setAttribute("transform",`translate(132,-190) rotate(${wave})`);
+  const lk=(o.look||0)*10;
+  const scared=o.mood==="schrik";
+  for(const [id,cx] of [["eyeL",-52],["eyeR",52]]){const e=$(id);e.setAttribute("cx",cx+lk);e.setAttribute("ry",o.blink?2:(scared?27:21));e.setAttribute("rx",scared?21:17)}
+  const t=o.talk||0;
+  if(scared) $("mouth").setAttribute("d",`M${-14+lk},-222 a14,${14+t*6} 0 1,0 28,0 a14,${14+t*6} 0 1,0 -28,0`);
+  else if(t>0.12) $("mouth").setAttribute("d",`M${-28+lk},-232 Q${lk},${-232+34*t} ${28+lk},-232 Z`);
+  else $("mouth").setAttribute("d",`M${-30+lk},-228 Q${lk},-205 ${30+lk},-228`);
+  $("mouth").setAttribute("fill",(scared||t>0.12)?"#E3A02A":"none");
+}
+
+function bubble(show,x,y,w,text,tipx,tipy,size,typed){
+  const b=$("bubble");if(show<=0){b.setAttribute("opacity",0);return}
+  const lines=wrapLines(text,size,w-80);const h=lines.length*size*1.18+70;
+  const sc=spring(show);b.setAttribute("opacity",clamp(show*4));
+  b.setAttribute("transform",`translate(${tipx},${tipy}) scale(${sc}) translate(${-tipx},${-tipy})`);
+  $("bubBox").setAttribute("x",x);$("bubBox").setAttribute("y",y);$("bubBox").setAttribute("width",w);$("bubBox").setAttribute("height",h);
+  const bx=clamp(tipx,x+70,x+w-70);
+  $("bubTail").setAttribute("d",`M${bx-34},${y+h-6} L${tipx},${tipy} L${bx+34},${y+h-6} Z`);
+  $("bubFix").setAttribute("x",bx-30);$("bubFix").setAttribute("y",y+h-12);$("bubFix").setAttribute("width",60);$("bubFix").setAttribute("height",10);
+  const g=$("bubText");g.innerHTML="";const words=text.split(" ");let n=Math.max(1,Math.round(words.length*typed));let cnt=0;
+  lines.forEach((ln,i)=>{const ws=ln.split(" ");const part=[];for(const w2 of ws){cnt++;if(cnt<=n)part.push(w2)}if(part.length)el("text",{x:x+40,y:y+34+size+i*size*1.18,"font-size":size,fill:"#121212"},g,part.join(" "))});
+}
+
+
+const fmt=(n,pre,post)=>(pre||"")+Math.round(n).toLocaleString("nl-NL")+(post||"");
+function hook(t,alpha){const g=$("hook");g.innerHTML="";if(alpha<=0)return;const lines=wrapLines(D.haak,112,930);let k=0;
+  const c=document.createElement("canvas").getContext("2d");c.font="900 112px Archivo";
+  lines.forEach((ln,i)=>{let x=72;for(const w of ln.split(" ")){const p=1;const sc=spring(p);
+      const red=D.rood.includes(w.toLowerCase().replace(/[.,!?]/g,""));
+      el("text",{x:0,y:0,"font-size":112,fill:red?"#D64034":"#121212",transform:`translate(${x},${400+i*126}) scale(${0.85+0.15*sc})`,opacity:alpha},g,w);
+      x+=c.measureText(w+" ").width;k++}})}
+function render(t){
+  const T=D.T;const blink=((Math.floor(t*30)+50)%95)<3;
+  const C=t>=T.cta;
+  $("sceneC").setAttribute("opacity",C?1:0);$("top").setAttribute("opacity",C?0:1);
+  $("pillTx").textContent=D.label;$("pillBg").setAttribute("width",60+D.label.length*23);
+  // fase A: kop + vraag
+  const hookA=t<T.in?1:clamp(1-(t-T.in)/0.3);hook(t,hookA);
+  // kaart met invoer
+  const cin=eo(clamp((t-T.in)/0.5));const cout=t>T.punch?eo(clamp((t-T.punch)/0.5)):0;
+  const card=$("card");card.setAttribute("opacity",t<T.in?0:cin*(1-cout));
+  card.setAttribute("transform",`translate(0,${(1-cin)*120-cout*80})`);
+  $("cardTitle").textContent=D.titel;
+  const g=$("rows");g.innerHTML="";
+  D.rijen.forEach((r,i)=>{const st=T.in+0.45+i*T.rij;const p=clamp((t-st)/0.25);if(p<=0)return;const y=470+i*108;
+    const rg=el("g",{opacity:p,transform:`translate(${(1-eo(p))*40},0)`},g);
+    el("text",{x:112,y:y+62,"font-size":40,style:"font-weight:800",fill:"#3d3a35"},rg,r[0]);
+    const typed=clamp((t-st-0.1)/0.45);const val=r[1].slice(0,Math.ceil(r[1].length*typed));
+    el("rect",{x:600,y:y+12,width:368,height:76,rx:16,fill:r[2]?"#FDF0D3":"#F4EFE4",stroke:typed<1&&typed>0?"#E3A02A":"none","stroke-width":4},rg);
+    el("text",{x:948,y:y+64,"font-size":42,"text-anchor":"end",class:"mono",fill:r[2]?"#9a5f00":"#121212"},rg,val);
+    if(i<D.rijen.length-1)el("rect",{x:112,y:y+104,width:856,height:2,fill:"#eee6d6"},rg)});
+  // uitkomst
+  const rs=$("res");const rp=clamp((t-T.res)/0.5);
+  if(t>=T.res){const up=t>T.punch?eo(clamp((t-T.punch)/0.6)):0;const y=lerp(1050,380,up);
+    rs.setAttribute("opacity",1);rs.setAttribute("transform",`translate(540,${y+125}) scale(${spring(rp)}) translate(-540,-125) translate(0,0)`);
+    rs.setAttribute("transform",`translate(0,${y}) translate(540,125) scale(${0.4+0.6*spring(rp)}) translate(-540,-125)`);
+    $("resLab").textContent=D.uitkomst.label;$("resSub").textContent=D.uitkomst.sub;
+    const cnt=eo(clamp((t-T.res-0.2)/1.1));$("resNum").textContent=fmt(D.uitkomst.num*cnt,D.uitkomst.pre,D.uitkomst.post);
+    const d=$("disc");d.textContent=D.disc;d.setAttribute("y",y+300);d.setAttribute("opacity",clamp((t-T.res-1.3)/0.4))}
+  else{rs.setAttribute("opacity",0);$("disc").setAttribute("opacity",0)}
+  // camera schok bij ka-ching
+  const sk=t-(T.res+1.3);const sh=sk>0&&sk<0.3?(1-sk/0.3)*10:0;$("cam").setAttribute("transform",`translate(${Math.sin(t*90)*sh},${Math.cos(t*77)*sh})`);
+  // mister + ballonnen
+  if(!C){
+    if(t<T.in){mister(760,1840,1.05,{blink,look:-1,talk:t>0.7&&t<T.in-0.3?Math.abs(Math.sin(t*17)):0,wave:t<0.7?t+0.3:0,armR:t>=0.7?-140:0});
+      bubble(clamp((t-0.6)/0.4)*clamp((T.in-t)/0.25),120,820,620,D.vraag,700,1380,60,clamp((t-0.6)/0.8))}
+    else if(t<T.punch){const typing=D.rijen.some((r,i)=>{const st=T.in+0.45+i*T.rij;return t>st&&t<st+0.6});
+      const happy=t>T.res+1.3;
+      mister(lerp(760,860,eo(clamp((t-T.in)/0.6))),1840+(t>T.res+1.3&&t<T.res+1.9?-Math.abs(Math.sin((t-T.res-1.3)/0.6*Math.PI))*70:0),0.9,{blink,look:-1,armL:typing?Math.sin(t*30)*20:0,armR:happy?-150:0,talk:0});bubble(0)}
+    else{const pt=t-T.punch;mister(lerp(860,780,eo(clamp(pt/0.5))),1840,1.1,{blink,look:-1,talk:pt<T.cta-T.punch-0.8&&pt>0.3?Math.abs(Math.sin(pt*17)):0,armR:-40+Math.sin(pt*6)*15});
+      bubble(clamp((pt-0.3)/0.4)*clamp((T.cta-t)/0.25),110,760,840,D.punch,700,1330,64,clamp((pt-0.3)/1.6))}
+  }else{const ct=t-T.cta;bubble(0);
+    const g2=$("ctaText");g2.innerHTML="";const lines=wrapLines(D.cta,92,950);
+    lines.forEach((ln,i)=>{const p=eo(clamp((ct-0.1-i*0.12)/0.45));el("text",{x:72,y:420+i*130+(1-p)*60,"font-size":92,fill:"#121212",opacity:p},g2,ln)});
+    const pb=spring(clamp((ct-0.4)/0.6));$("ctaBtn").setAttribute("transform",`translate(482,822) scale(${pb}) translate(-482,-822)`);
+    $("ctaTel").setAttribute("opacity",clamp((ct-0.7)/0.3));$("ctaSerie").setAttribute("opacity",clamp((ct-0.9)/0.3));
+    const jump=Math.abs(Math.sin(clamp(ct/0.6)*Math.PI))*60;mister(760,1840-jump,1.15,{wave:ct>0.6?ct:0,blink,talk:0})}
+  const fl=[T.in,T.cta].map(x=>Math.abs(t-x)).reduce((a,b)=>Math.min(a,b));$("flash").setAttribute("opacity",fl<0.1?0.45*(1-fl/0.1):0);
+}
+window.render=render;
+</script>
+</body></html>
