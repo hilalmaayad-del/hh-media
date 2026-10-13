@@ -1,5 +1,5 @@
 {
- "versie": "2026-10-09",
+ "versie": "2026-10-13",
  "regels": {
   "merk": "HH Services — administratiekantoor met uitleg voor ondernemers: administratie, btw, inkomstenbelasting, loonadministratie, HR & werving, trainingen en projectmanagement. Focus: zzp'ers en kleine bedrijven (vooral bouw), Zuid-Holland, online landelijk. Wissel onderwerpen af zodat de complete dienstverlening zichtbaar is.",
   "toon": "je-vorm, kort, direct, behulpzaam, geen vaktaal, geen verkooppraat. Zinnen max 9 woorden per schermtekst.",
@@ -31,7 +31,86 @@
   "mix": "Ongeveer 1 op de 3 posts is een carrousel (stappenplan/checklist, gemaakt om te bewaren).",
   "caption_regels": "Begin met het zoekwoord waar ondernemers op zoeken (bijv. 'Btw-aangifte als zzp'er'). Eindig met een vraag die uitnodigt tot reageren + 👇, of met 'Bewaar dit'.",
   "serie": "Video's krijgen boven de haak een serielabel: 'ZZP-WEETJE #<nummer>' (nummer = aantal eerdere video's in gepost.json + 1).",
-  "huisstijl": "Alles in de stijl van ons huisicoon Mister Rekenmachine (de HH-TELMACHINE: zwarte rekenmachine met oker scherm, bonrol en hendel). Geluid: toetspiepjes, bonprinter, hendel en kassa-'ka-ching' met een rustige, warme melodie. Geen TikTok-muziek toevoegen."
+  "huisstijl": "Alles in de stijl van ons huisicoon Mister Rekenmachine (de HH-TELMACHINE: zwarte rekenmachine met oker scherm, bonrol en hendel). Geluid: toetspiepjes, bonprinter, hendel en kassa-'ka-ching' met een rustige, warme melodie. Geen TikTok-muziek toevoegen.",
+  "stijlen": {
+   "A_telmachine": "Telmachine + kassabon (eerste stijl), donker met oker. make_video.py",
+   "B_slides": "Genummerde kaarten als video. make_carousel.py --video",
+   "C_mister": "Mister Rekenmachine als animatiefiguur (JS/SVG of scènes). render_js.py / scene_videos.py",
+   "D_schermopname": "Echte rekentool van hhservices.nl in een telefoon: tikken, typen, zoom op uitkomst. schermopname.py",
+   "E_nieuw": "Nieuwe stijl, volgt van de eigenaar"
+  },
+  "weekkalender": [
+   {
+    "dag": "ma",
+    "tijd": "12:15",
+    "rubriek": "Reken mee",
+    "doel": "rekentool promoten",
+    "stijl": "A_telmachine"
+   },
+   {
+    "dag": "ma",
+    "tijd": "17:45",
+    "rubriek": "De fout van de week",
+    "stijl": "C_mister"
+   },
+   {
+    "dag": "di",
+    "tijd": "17:45",
+    "rubriek": "Het maandgesprek",
+    "stijl": "C_mister"
+   },
+   {
+    "dag": "wo",
+    "tijd": "12:15",
+    "rubriek": "Reken mee",
+    "doel": "rekentool promoten",
+    "stijl": "C_mister (rouleert met D/B per week)"
+   },
+   {
+    "dag": "wo",
+    "tijd": "17:45",
+    "rubriek": "Stappenplan",
+    "stijl": "B_slides"
+   },
+   {
+    "dag": "do",
+    "tijd": "17:45",
+    "rubriek": "Nieuwsflits",
+    "stijl": "B_slides (nieuwsticker, zonder mascotte)"
+   },
+   {
+    "dag": "vr",
+    "tijd": "12:15",
+    "rubriek": "Reken mee",
+    "doel": "rekentool promoten",
+    "stijl": "D_schermopname"
+   },
+   {
+    "dag": "vr",
+    "tijd": "17:45",
+    "rubriek": "Op straat",
+    "stijl": "C_mister"
+   },
+   {
+    "dag": "za",
+    "tijd": "17:45",
+    "rubriek": "Rekentip",
+    "stijl": "A_telmachine"
+   },
+   {
+    "dag": "zo",
+    "tijd": "17:45",
+    "rubriek": "Vraag van de week",
+    "stijl": "B_slides of E_nieuw"
+   }
+  ],
+  "afwisseling": "Nooit twee keer dezelfde stijl op één dag. Nooit dezelfde stijl in twee opeenvolgende posts. Mister Rekenmachine maximaal 4 van de 10 posts per week (was 4 van 7). Reken mee rouleert per week over de 4 tools (uurtarief, belasting opzijzetten, auto zaak of privé, administratie-check) en wisselt elke keer van stijl. Elke video begint met een volle titelkaart als eerste beeld (cover).",
+  "reken_mee": {
+   "cta": "Reken het zelf uit · hhservices.nl/tools · gratis, zonder inloggen",
+   "bron_cijfers": "Altijd uitrekenen met de echte tool op de site, zodat de uitkomst in de video gelijk is aan wat de kijker zelf ziet.",
+   "disclaimer": "Voorbeeld <jaar> · indicatie",
+   "serie": "REKEN MEE #<n>"
+  }
  },
  "items": [
   {
