@@ -18,10 +18,10 @@ text{font-family:Archivo;font-weight:900}
     <filter id="sh2" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000" flood-opacity=".25"/></filter>
     <g id="receipt">
       <path d="M-120,-170 H120 V150 l-12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 -12,14 -12,-14 Z" fill="#fff"/>
-      <text x="-90" y="-118" class="mono" font-size="26" fill="#777">BOUWMARKT</text>
+      <text class="bonKop mono" x="-90" y="-118" font-size="26" fill="#777">BOUWMARKT</text>
       <rect x="-90" y="-90" width="150" height="10" rx="5" fill="#bbb"/><rect x="-90" y="-60" width="110" height="10" rx="5" fill="#bbb"/>
       <rect x="-90" y="-30" width="170" height="10" rx="5" fill="#bbb"/><rect x="-90" y="0" width="90" height="10" rx="5" fill="#bbb"/>
-      <text x="-90" y="80" font-size="40" fill="#121212">€ 84,95</text>
+      <text class="bonBedrag" x="-90" y="80" font-size="40" fill="#121212">€ 84,95</text>
     </g>
   </defs>
 
@@ -118,6 +118,9 @@ function el(tag,attrs,parent,txt){const e=document.createElementNS(NS,tag);for(c
 (function(){const g=$("keys");const lab=["7","8","9","÷","4","5","6","×","1","2","3","−"];for(let r=0;r<3;r++)for(let c=0;c<4;c++){const x=-104+c*54,y=-166+r*50;const op=c===3;const hot=(r===2&&c===3);el("rect",{x,y,width:46,height:40,rx:9,fill:hot?"#E3A02A":op?"#4a4641":"#ECE8DE"},g);el("text",{x:x+23,y:y+30,"font-size":24,"text-anchor":"middle",fill:op&&!hot?"#eee":"#121212"},g,lab[r*4+c])}})();
 
 const D=window.DATA;
+document.addEventListener("DOMContentLoaded",()=>{});
+function applyBon(){if(D.bonKop)document.querySelectorAll(".bonKop").forEach(e=>e.textContent=D.bonKop);if(D.bonBedrag)document.querySelectorAll(".bonBedrag").forEach(e=>e.textContent=D.bonBedrag);if(D.serie)$("ctaSerie").textContent=D.serie}
+applyBon();
 // layout tekst
 function wrapLines(text,size,maxw){const c=document.createElement("canvas").getContext("2d");c.font=`900 ${size}px Archivo`;const out=[];let cur="";for(const w of text.split(" ")){const t=(cur+" "+w).trim();if(c.measureText(t).width<=maxw)cur=t;else{out.push(cur);cur=w}}if(cur)out.push(cur);return out}
 
